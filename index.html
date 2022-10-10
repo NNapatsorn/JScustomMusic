@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
     <title>Custom Music</title>
-</head>
-<body>
+  </head>
+  <body>
+    <h1>Music Application</h1>
+    <div class="music-container" id="music-container">
+      <div class="music-info">
+        <h4 class="title" id="title"></h4>
+        <div class="progress-container" id="progress-container">
+          <div class="progress" id="progress"></div>
+        </div>
+      </div>
 
-</body>
+      <!-- <audio src="/music/forever1.mp3" controls></audio> -->
+      <audio src="" id="audio" hidden controls></audio>
+      <div class="img-container">
+        <img src="" id="cover" alt="" />
+      </div>
+      <div class="navigation">
+        <button class="action-btn" id="prev">
+          <i class="fa-solid fa-backward"></i>
+        </button>
+        <button class="action-btn" id="play">
+          <i class="fa-solid fa-play"></i>
+        </button>
+        <!-- <button class="action-btn" id="pause">
+          <i class="fa-solid fa-pause"></i>
+        </button> -->
+        <button class="action-btn" id="next">
+          <i class="fa-solid fa-forward"></i>
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
